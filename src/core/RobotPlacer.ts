@@ -20,7 +20,7 @@ class RobotPlacer implements IRobotPlacer {
       if (_placement.length < 3) throw new InsufficientInfoError();
       if (
         isNaN(parseInt(_placement[0])) ||
-        isNaN(parseInt(_placement[0])) ||
+        isNaN(parseInt(_placement[1])) ||
         !Object.values(RobotDirection).includes(_placement[2] as RobotDirection)
       )
         throw new IncorrectInfoError();
