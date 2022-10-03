@@ -59,7 +59,7 @@ const subsequentQuestions = [
             console.log(`\nCurrent position: ${table.getRobot().report()}`);
             break;
         }
-      } catch (error) {
+      } catch (error: any) {
         return error.message;
       }
 
